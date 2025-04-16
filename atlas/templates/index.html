@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans_serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .stats {
+            font-size: 1.5em;
+        }
+
+        .stat {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Atlas Dashboard</h1>
+        <div class="stats">
+            <div class="stat">CPU Usage: {{ cpu }}%</div>
+            <div class="stat">Memory Usage: {{ memory }}%</div>
+        </div>
+    </div>
+</body>
+</html>
